@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #05050f;
+    background-image: 
+    radial-gradient(1px 1px at 20% 30%, #fff, transparent),
+    radial-gradient(1px 1px at 70% 20%, #fff, transparent),
+    radial-gradient(2px 2px at 40% 80%, #fff, transparent),
+    radial-gradient(1px 1px at 85% 70%, #fff, transparent),
+    radial-gradient(1px 1px at 10% 85%, #fff, transparent),
+    radial-gradient(2px 2px at 60% 55%, #fff, transparent);
+}
+
+.space {
+    position: relative;
+    width: 700px;
+    height: 700px;
+    transform: scale(0.9);
+}
+
+.sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    margin: -40px 0 0 -40px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #fff3a0, #ffb300 60%, #ff6a00);
+    box-shadow: 0 0 40px 15px rgba(255, 170, 0, 0.7);
+}
+
+.orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: rotate linear infinite;
+}
+
+.planet {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.o1 {width: 140px; height: 140px; margin: -70px 0 0 -70px; animation-duration: 4s;}
+.o2 {width: 200px; height: 200px; margin: -100px 0 0 -100px; animation-duration: 7s;}
+.o3 {width: 270px; height: 270px; margin: -135px 0 0 -135px; animation-duration: 10s;}
+.o4 {width: 340px; height: 340px; margin: -170px 0 0 -170px; animation-duration: 15s;}
+.o5 {width: 450px; height: 450px; margin: -225px 0 0 -225px; animation-duration: 24s;}
+.o6 {width: 560px; height: 560px; margin: -280px 0 0 -280px; animation-duration: 32s;}
+
+
+.mercury {width: 12px; height: 12px; background: #b5b5b5;}
+.venus {width: 20px; height: 20px; background: #e8b96a;}
+.earth {width: 24px; height: 24px; background: radial-gradient(circle at 30% 30%, #6ec1ff, #1a5fd1);}
+.mars {width: 18px; height: 18px; background: #e2573b;}
+.jupiter {width: 44px; height: 44px; background: radial-gradient( #b9763d, #e6cf8b);}
+.saturn {width: 36px; height: 36px; background: #e6cf8b;}
+
+
+.ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    border: 5px solid rgba(230, 207, 139, 0.7);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) rotateX(75deg);
+}
+
+.moon-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin: -25px 0 0 -25px;
+    animation: rotate 2s linear infinite;
+}
+
+.moon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 7px;
+    height: 7px;
+    margin-left: -3.5px;
+    border-radius: 50%;
+    background: #ddd;
+}
+
+@keyframes rotate {
+    to { transform: rotate(360deg);}
+}
