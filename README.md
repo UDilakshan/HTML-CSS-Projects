@@ -4,6 +4,8 @@ Welcome to my HTML & CSS Projects Repository!
 
 This repository contains a collection of web development projects built using **HTML5 and CSS3**. These projects help me improve my frontend development skills, explore creative UI designs, and practice responsive web development.
 
+![Course Preview](Course-thumb.jpg)
+
 ## 📂 Projects
 
 | No. | Project Name | Description |
